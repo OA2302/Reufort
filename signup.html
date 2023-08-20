@@ -22,12 +22,16 @@
             <input type="email" name="email" id="emailInput" placeholder="example@gmail.com"><br>
             
         </div>
+        <div>
+            <label for="password">Create a Password:</label><br>
+            <input type="password" name="password" id="password">
+        </div>
         <div class="down" style="display: flex;">
             <input type="checkbox" style="width: 30px;" name="Remember" id="Remember">
             <p style="padding-top: 10px; padding-left: 20px;"> Remember Me</p>
-        <a href="signin.html" style="padding-top: 20px; margin-left: 60%;">Already a member</a>
+        <a href="signin.html" style="padding-top: 20px; margin-left: 60%; color: blue;">Already a member</a>
         </div>
-        <button type="submit" onclick="validateEmail()">Submit</button>
+        <button type="submit" onclick="validateEmail()">Signup</button>
     </form>
     </main>
 <style>
@@ -91,13 +95,13 @@ function validateEmail() {
     document.getElementById("auto").innerHTML = `
         <p class="title">Thanks for subscribing!</p>
         <p id="confirmationEmailText">A confirmation email has been sent to <span id="userEmail"></span>. Please open it and click the button inside to confirm your subscription.</p>
-        <button onclick="dismissMessage()"> <a href="index.html">Dismiss message</a></button>
+        <button onclick="dismissMessage()"> <a href="home.html">Dismiss message</a></button>
     `
 }
 function dismissMessage() {
     document.getElementById("auto").style.display = 'none'
     // when user clicks 'dismiss message' button, it refreshes the page
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
 }
     </script>
 </body>

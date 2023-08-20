@@ -32,7 +32,7 @@ ul {
 }
 .logo {
    margin-right: 4rem;
-   margin-top: 20px;
+   margin-top: 15px;
    color: brown;
    font-size: 35px;
    font-weight: bolder;
@@ -45,6 +45,7 @@ a {
     background-color: #fff;
     display: flex;
     position: fixed;
+    width: 100%;
     align-items: center;
     padding: 2rem 4rem;
     height: 6rem;
@@ -82,7 +83,6 @@ a {
     align-items: center;
     gap: 2rem;
     margin-top: 30px;
-    margin-left: 120px;
 }
 .register {
     padding: 0.75rem 1rem;
@@ -127,6 +127,7 @@ a {
 }
 .mob-list {
     width: 100%;
+    margin-left: 160px;
 }
 /* Header start */
 .header {
@@ -135,7 +136,7 @@ a {
     display: grid;
     grid-template-columns: 48% 40%;
     gap: 9%;
-    margin: auto;
+    margin:auto;
 }
 .left {
     height: 100%;
@@ -184,11 +185,16 @@ a {
 .hero-img {
     display: block;
     width: 500px;
+    border-radius: 10px;
     padding-right: 50px;
     height: 330px;
     background-size: cover;
     background-image: url("images/cultural.jpg");
-    margin-top: 100px;
+    margin-top: 130px;
+}
+.hero-img:hover {
+    background-image: url(images/Master\ ville\ coll5\ -\ Copy.jpg);
+    transition: 5s ease-out;
 }
 .bottom {
     background-color: brown;
@@ -241,6 +247,7 @@ a {
 @media screen and (max-width: 800px) {
     .nav {
         display: flex;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding: 2rem;
@@ -334,7 +341,6 @@ a {
     .header {
         grid-template-columns: 1fr;
         gap: 4%;
-        margin-top: 20px;
     }
     .title {
         font-size: 3rem;

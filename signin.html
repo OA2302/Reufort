@@ -6,8 +6,99 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Gift <br>
-    Coming soon...</h1>
-    <a href="index.html">Go back to menu</a>
+    <main>
+        <form id="auto">
+            <h1 style="text-align: center;">Login</h1>
+        <div>
+            <label for="fisrtname">Name:</label><br>
+            <input type="text" placeholder="Reuben John" id="fisrtname"><br>
+        </div>
+        <div>
+            <label for="Email">Email:</label><br>
+            <input type="email" name="email" id="emailInput" placeholder="example@gmail.com"><br>
+            
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="down" style="display: flex;">
+            <input type="checkbox" style="width: 30px;" name="Remember" id="Remember">
+            <p style="padding-top: 10px; padding-left: 20px;"> Remember Me</p>
+        <a href="signup.html" style="padding-top: 30px; margin-left: 55%; color: blue;">Create an Account?</a>
+        </div>
+        <button type="submit" onclick="validateEmail()">Login</button>
+    </form>
+    </main>
+<style>
+    body {
+        background-color: #fff;
+    }
+    main {
+        background-color: brown;
+        height: 90%;
+        width: 70%;
+        border-radius: 12px;
+        padding: 30px;
+        margin-left: 13%;
+    }
+    p{
+  font-size: 16px;
+  color: #fff;
+}
+.thanks-message{
+  display: none;
+  width: 300px;
+  max-height: 500% !important;
+  padding: 3%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+    button{
+  width: 70%;
+  height: 40px;
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 4% 13%;
+  display: block;
+  border: none;
+}
+button:hover{
+  background: rgb(255,98,87);
+  background: linear-gradient(90deg, rgba(255,98,87,1) 29%, rgba(255,109,89,1) 100%);
+  border: none;
+  cursor: pointer;
+  transition: 2s;
+}
+input{
+    padding-left: 20px;
+    width: 220px;
+    height: 40px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 2% 0%;
+}
+</style>
+    <script>
+
+
+function validateEmail() {
+    document.getElementById("auto").innerHTML = `
+        <p class="title">Thanks for subscribing!</p>
+        <p id="confirmationEmailText">A confirmation email has been sent to <span id="userEmail"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button onclick="dismissMessage()"> <a href="home.html">  Dismiss message </a></button>
+    `
+}
+function dismissMessage() {
+    document.getElementById("auto").style.display = 'none'
+    // when user clicks 'dismiss message' button, it refreshes the page
+    window.location.href = 'home.html';
+}
+    </script>
 </body>
 </html>
