@@ -334,6 +334,7 @@ a {
     .header {
         grid-template-columns: 1fr;
         gap: 4%;
+        margin-top: 20px;
     }
     .title {
         font-size: 3rem;
