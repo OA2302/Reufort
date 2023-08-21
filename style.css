@@ -35,7 +35,7 @@ ul {
 }
 a {
     text-decoration: none;
-    font-size: xx-large;
+    font-size: larger;
     color: brown;
 }
 .nav {
@@ -200,7 +200,7 @@ a {
     margin-left: 200px;
     border-radius: 10px;
     padding: 70px;
-    margin-bottom: 30px;
+    margin-top: 100px;
 }
 .flex-btn {
     display: flex;
