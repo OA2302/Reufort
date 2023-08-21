@@ -17,10 +17,6 @@ const mobList = document.querySelector(".mob-list");
             dropdownMenu.classList.remove("show");
         });
     } else {
-        link.querySelector(".link").addEventListener("click", (e) => {
-            e.preventDefault();
-        });
-
         link.addEventListener("click", (e) => {
             const dropdownMenu = e.target.closest(".dropdown").querySelector(".dropdown-content");
             dropdownMenu.classList.toggle("show");
@@ -53,3 +49,9 @@ function showAuto() {
   function showLaunchpad() {
     document.getElementById("auto").innerHTML = "<h1>Subjects <br> Offered</h1> <p>Mathematics, English Language, Chemistry, Biology, Physics, Economics, Yoruba, Literature in English, Commerce, Data Processing, Cultural and Creative, Pre Vocational Studies, Basic Science and Technology, French, Religion and National Values Education</P>"
   }
+
+
+
+  /*link.querySelector(".link").addEventListener("click", (e) => {
+    e.preventDefault();
+});*/
